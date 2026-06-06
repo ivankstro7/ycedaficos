@@ -99,7 +99,13 @@
     filter: brightness(0.95);
 }
 
-/* C. Utility classes for HTML */
+/* C. Card */
+.card {
+    border-radius: 1rem;
+    border: 1px solid var(--color-stroke-light);
+}
+
+/* D. Utility classes for HTML */
 .text-brand-primary {
     color: var(--color-brand-primary);
 }
@@ -168,6 +174,11 @@
     border-color: var(--color-accent);
 }
 
+/* Evitar scroll horizontal */
+body {
+    background-color: var(--background-neutro-100);
+}
+
 /* =========================================
    4. Homepage Custom Styles
      (Estilos específicos para la página de inicio, no relacionados con componentes reutilizables)
@@ -228,6 +239,110 @@
     aspect-ratio: 4 / 3;
     /* Separación sutil del contenido superior */
     border-radius: 0 0 1.5rem 1.5rem;
+}
+
+/* --- sección desafío --- */
+.section-title {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.section-title span {
+    font-weight: 600;
+}
+
+.section-eyebrow,
+.card-num {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--color-text-secundary);
+}
+
+.card-title {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+.card-desc {
+    font-family: var(--font-primary);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--color-text-secundary);
+}
+
+.grid-cell-1 {
+    border: 1px solid var(--color-stroke-light);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.grid-cell-5 {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.grid-cell-2,
+.grid-cell-3,
+.grid-cell-5 {
+    border-left: 1px solid var(--color-stroke-light);
+    border-right: 1px solid var(--color-stroke-light);
+    border-bottom: 1px solid var(--color-stroke-light);
+}
+
+.grid-cell-4 {
+    border-left: 1px solid var(--color-stroke-light);
+    border-right: 1px solid var(--color-stroke-light);
+}
+
+/* ── Recuerda callout ── */
+.caja-recordatorio {
+    /* Combinación de múltiples fondos: textura primero (arriba), degradado después (abajo) */
+    background:
+        url('../assets/imagenes/03.desafio/desafio-bg-snackbar.webp') center center repeat,
+        /* Ajusta la ruta a tu patrón */
+        linear-gradient(to right, #13311d 0%, #24472c 50%, #305839 100%);
+    /* Ajustado al tono oscuro de la captura */
+    /* Agregamos el modo de mezcla para que la textura se fusione perfectamente con el verde */
+    background-blend-mode: overlay;
+    border-radius: 1.5rem;
+    /* Bordes redondeados idénticos al diseño */
+    max-width: 620px;
+}
+
+/* Estilos de la etiqueta de encabezado */
+.recordatorio-etiqueta {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    letter-spacing: 0.18em;
+}
+
+/* Estilos del cuerpo de texto en serif */
+.recordatorio-texto {
+    font-family: "Fraunces", serif;
+    font-size: 1.15rem;
+    /* Un poco más grande para emular la jerarquía de la imagen */
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--color-text-light);
+}
+
+/* Enfatizados en cursiva y con el color de marca verde claro */
+.texto-resaltado {
+    font-weight: 500;
+    font-style: italic;
+    color: #79b94b;
+    /* Reemplaza aquí por tu variable fija si lo prefieres */
 }
 
 /* Botón flotante personalizado */
@@ -345,17 +460,7 @@
     }
 
     /* --- titulo de secciones --- */
-    .seccion-desafio h2,
-    .seccion-presentacion h2,
-    .seccion-solucion h2,
-    .seccion-semillas h2,
-    .seccion-semillas-yc h2,
-    .seccion-catalogo h2,
-    .seccion-elegirnos h2,
-    .seccion-testimonios h2,
-    .seccion-faq h2,
-    .seccion-siguenos h2,
-    .seccion-cta h2 {
+    .section-title {
         font-size: 2.5rem;
     }
 
