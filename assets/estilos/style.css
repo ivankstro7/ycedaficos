@@ -132,22 +132,6 @@
     color: var(--text-on-brand);
 }
 
-.background-neutro-050 {
-    background-color: var(--background-neutro-050);
-}
-
-.background-neutro-100 {
-    background-color: var(--background-neutro-100);
-}
-
-.background-neutro-150 {
-    background-color: var(--background-neutro-150);
-}
-
-.background-accent-tonal {
-    background-color: var(--background-accent-tonal);
-}
-
 .bg-brand-primary {
     background-color: var(--color-brand-primary);
 }
@@ -184,6 +168,12 @@
     border-color: var(--color-accent);
 }
 
+/* =========================================
+   4. Homepage Custom Styles
+     (Estilos específicos para la página de inicio, no relacionados con componentes reutilizables)
+     Sección por sección, con comentarios claros.
+   ========================================= */
+
 /* --- Header / Navbar --- */
 .enlace-numero {
     font-family: "JetBrains Mono", monospace;
@@ -198,6 +188,47 @@
     max-height: 70px;
     width: auto;
     object-fit: contain;
+}
+
+/* --- Hero image --- */
+.hero-card {
+    border-radius: 1.5rem 1.5rem 0 0;
+    overflow: hidden;
+}
+
+.hero-text-block {
+    background-color: var(--background-neutro-150);
+    padding: 1.5rem;
+}
+
+.hero-eyebrow {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+}
+
+.hero-title {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hero-title span {
+    font-style: italic;
+}
+
+.hero-imagen-adaptativa {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    /* Forzamos la relación de aspecto solicitada en móviles (puedes usar 1/1 o 3/4) */
+    aspect-ratio: 4 / 3;
+    /* Separación sutil del contenido superior */
+    border-radius: 0 0 1.5rem 1.5rem;
 }
 
 /* Botón flotante personalizado */
@@ -233,6 +264,15 @@
 /* --- 768px Tablet --- */
 @media (min-width: 768px) {
 
+    /* --- Hero image --- */
+    .hero-section {
+        min-height: 360px;
+    }
+
+    .hero-imagen-adaptativa {
+        aspect-ratio: auto;
+    }
+
     /* --- FAB --- */
     .whatsapp-fab {
         bottom: 24px;
@@ -240,7 +280,27 @@
 }
 
 /* --- 992px Small Desktop --- */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    /* --- Hero image --- */
+    .hero-text-block {
+        background: transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* La imagen vuelve a ser el fondo absoluto del contenedor */
+    .hero-imagen-adaptativa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        aspect-ratio: 4/3;
+    }
+}
 
 /* --- 1200px md Desktop --- */
 @media (min-width: 1200px) {
