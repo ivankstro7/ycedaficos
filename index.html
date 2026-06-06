@@ -113,69 +113,72 @@
 </head>
 
 <body class="background-neutro-100">
-    <nav class="navbar navbar-expand-xl navegacion-principal background-neutro-100 py-3">
+    <!-- Header / Navbar -->
+    <nav id="navegacionPrincipal"
+        class="navbar navbar-expand-xl navegacion-principal background-neutro-100 py-3 sticky-top" data-aos="fade-down"
+        data-aos-delay="100">
         <div class="container-fluid px-4 px-md-5">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo-yc-edaficos.png" alt="Logotipo de YC Edáficos S.A.S."
+            <a class="navbar-brand d-flex align-items-center" href="#navegacionPrincipal">
+                <img src="assets/imagenes/01.header/logo.webp" alt="Logotipo de YC Edáficos S.A.S."
                     class="logotipo-empresa img-fluid">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipalYC" aria-controls="menuPrincipalYC" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipalYC"
+                aria-controls="menuPrincipalYC" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipalYC">
-                <ul class="navbar-nav mx-auto mb-3 mb-lg-0 gap-3 gap-xl-4 align-items-lg-center">
+                <ul class="navbar-nav mx-auto mb-3 mb-lg-0 gap-3 align-items-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-1 p-2" href="#desafio">
+                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-2" href="#desafio">
                             <span class="enlace-numero">01</span>
                             <span class="enlace-texto color-text-primary">El Desafío</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-1 p-2" href="#solucion">
+                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-2" href="#solucion">
                             <span class="enlace-numero">02</span>
                             <span class="enlace-texto color-text-primary">La Solución</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-1 p-2" href="#presentacion">
+                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-2" href="#presentacion">
                             <span class="enlace-numero">03</span>
                             <span class="enlace-texto color-text-primary">Presentación</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-1 p-2" href="#edaficos">
+                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-2" href="#edaficos">
                             <span class="enlace-numero">04</span>
                             <span class="enlace-texto color-text-primary">YC Edáficos</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-1 p-2" href="#semillas">
+                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-2" href="#semillas">
                             <span class="enlace-numero">05</span>
                             <span class="enlace-texto color-text-primary">Semillas</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-1 p-2" href="#faq">
+                        <a class="nav-link enlace-navegacion d-flex align-items-center gap-2" href="#faq">
                             <span class="enlace-numero">06</span>
                             <span class="enlace-texto color-text-primary">FAQ</span>
                         </a>
                     </li>
                 </ul>
                 <div class="d-flex justify-content-start justify-content-lg-end mt-2 mt-lg-0">
-                    <a href="#cotizar"
-                        class="boton-cotizar d-inline-flex align-items-center justify-content-between gap-3 text-decoration-none">
-                        <span class="boton-texto">Cotizar</span>
+                    <a href="#cotizar" class="boton-cotizar btn btn-primary d-flex align-items-center gap-2">
+                        <span class="">Cotizar por whatsapp</span>
                         <span class="boton-contenedor-icono d-flex align-items-center justify-content-center">
-                            <img src="img/icono-flecha.svg" alt="Icono de flecha hacia arriba derecha"
-                                class="icono-flecha">
+                            <img src="assets/imagenes/01.header/arrow-icon.webp" style="width: 32px; height: 32px;"
+                                alt="Icono de flecha hacia arriba derecha" class="icono-flecha">
                         </span>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Hero Section -->
+    
 
     <a href="https://wa.me/573142725677?text=Hola%20quiero%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
         target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Contactar por WhatsApp"

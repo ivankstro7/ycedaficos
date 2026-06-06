@@ -46,8 +46,7 @@
 /* A. Ajuste del Botón Primary */
 .btn-primary {
     background-color: var(--color-brand-primary);
-    color: var(--color-text-light);
-    font-weight: 600;
+    color: var(--color-text-primary);
     padding: 1rem 1.5rem;
     border-color: var(--color-brand-primary);
     border-radius: 100px;
@@ -186,13 +185,19 @@
 }
 
 /* --- Header / Navbar --- */
-/* Estilos de la numeración de los enlaces (ej: 01) */
 .enlace-numero {
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 0.75rem;
     color: #A7AD9B;
+}
+
+/* Ajuste de escala para el logotipo */
+.logotipo-empresa {
+    max-height: 70px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Botón flotante personalizado */
@@ -216,4 +221,61 @@
     width: 56px;
     height: 56px;
     display: block;
+}
+
+/* =========================================
+   Breakpoints Customizados
+   ========================================= */
+
+/* --- 608px landscape --- */
+@media (min-width: 608px) {}
+
+/* --- 768px Tablet --- */
+@media (min-width: 768px) {
+
+    /* --- FAB --- */
+    .whatsapp-fab {
+        bottom: 24px;
+    }
+}
+
+/* --- 992px Small Desktop --- */
+@media (min-width: 992px) {}
+
+/* --- 1200px md Desktop --- */
+@media (min-width: 1200px) {
+
+    /* --- hero image --- */
+    .logotipo-empresa {
+        max-height: 100px;
+    }
+}
+
+/* --- 1400px Larger Desktop --- */
+@media (min-width: 1400px) {
+
+    /* --- hero image --- */
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    /* --- titulo de secciones --- */
+    .seccion-desafio h2,
+    .seccion-presentacion h2,
+    .seccion-solucion h2,
+    .seccion-semillas h2,
+    .seccion-semillas-yc h2,
+    .seccion-catalogo h2,
+    .seccion-elegirnos h2,
+    .seccion-testimonios h2,
+    .seccion-faq h2,
+    .seccion-siguenos h2,
+    .seccion-cta h2 {
+        font-size: 2.5rem;
+    }
+
+    /* --- FAB --- */
+    .whatsapp-fab {
+        bottom: 32px;
+    }
 }
