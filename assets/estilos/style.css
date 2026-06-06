@@ -59,7 +59,7 @@
 .btn-primary:active,
 .btn-primary:active:focus {
     background-color: var(--color-accent) !important;
-    border-color: var(--color-brand-accent) !important;
+    border-color: var(--color-accent) !important;
     color: var(--color-text-light) !important;
     filter: brightness(1.3);
 }
@@ -98,4 +98,122 @@
     border-color: var(--color-stroke-light) !important;
     color: var(--color-text-light) !important;
     filter: brightness(0.95);
+}
+
+/* C. Utility classes for HTML */
+.text-brand-primary {
+    color: var(--color-brand-primary);
+}
+
+.color-text-accent {
+    color: var(--color-accent);
+}
+
+.color-text-brand {
+    color: var(--color-text-brand);
+}
+
+.color-text-primary {
+    color: var(--color-text-primary);
+}
+
+.color-text-secundary {
+    color: var(--color-text-secundary);
+}
+
+.color-text-light {
+    color: var(--color-text-light);
+}
+
+.text-on-brand-secondary {
+    color: var(--text-on-brand-secundary);
+}
+
+.text-on-brand {
+    color: var(--text-on-brand);
+}
+
+.background-neutro-050 {
+    background-color: var(--background-neutro-050);
+}
+
+.background-neutro-100 {
+    background-color: var(--background-neutro-100);
+}
+
+.background-neutro-150 {
+    background-color: var(--background-neutro-150);
+}
+
+.background-accent-tonal {
+    background-color: var(--background-accent-tonal);
+}
+
+.bg-brand-primary {
+    background-color: var(--color-brand-primary);
+}
+
+.bg-accent {
+    background-color: var(--color-accent);
+}
+
+.bg-neutro-050 {
+    background-color: var(--background-neutro-050);
+}
+
+.bg-neutro-100 {
+    background-color: var(--background-neutro-100);
+}
+
+.bg-neutro-150 {
+    background-color: var(--background-neutro-150);
+}
+
+.bg-accent-tonal {
+    background-color: var(--background-accent-tonal);
+}
+
+.border-stroke-light {
+    border-color: var(--color-stroke-light);
+}
+
+.border-brand-primary {
+    border-color: var(--color-brand-primary);
+}
+
+.border-accent {
+    border-color: var(--color-accent);
+}
+
+/* --- Header / Navbar --- */
+/* Estilos de la numeración de los enlaces (ej: 01) */
+.enlace-numero {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.75rem;
+    color: #A7AD9B;
+}
+
+/* Botón flotante personalizado */
+.whatsapp-fab {
+    position: fixed;
+    right: max(12px, calc((100vw - 100%) / 2 + 14px));
+    bottom: 16px;
+    z-index: 1050;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16%;
+    background: #25D366;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
+}
+
+.whatsapp-fab img {
+    width: 56px;
+    height: 56px;
+    display: block;
 }
