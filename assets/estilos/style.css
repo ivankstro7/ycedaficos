@@ -198,7 +198,6 @@
 
 .hero-text-block {
     background-color: var(--background-neutro-150);
-    padding: 1.5rem;
 }
 
 .hero-eyebrow {
@@ -266,7 +265,7 @@
 
     /* --- Hero image --- */
     .hero-section {
-        min-height: 360px;
+        min-height: 528px;
     }
 
     .hero-imagen-adaptativa {
@@ -293,21 +292,47 @@
     .hero-imagen-adaptativa {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 12px;
+        width: 98%;
         height: 100%;
         object-fit: cover;
         z-index: 0;
         aspect-ratio: 4/3;
+        border-radius: 1.5rem;
+    }
+
+    .hero-degradado::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 1.5rem;
+        left: 12px;
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.1) 50%,
+                rgba(0, 0, 0, 0) 100%);
+    }
+
+    .hero-section .hero-title {
+        color: var(--color-text-light);
     }
 }
 
 /* --- 1200px md Desktop --- */
 @media (min-width: 1200px) {
 
-    /* --- hero image --- */
+    /* --- header/navbar --- */
     .logotipo-empresa {
         max-height: 100px;
+    }
+
+    /* --- hero image --- */
+    .hero-section {
+        min-height: 768px;
+    }
+
+    .hero-imagen-adaptativa {
+        width: 99%;
     }
 }
 
