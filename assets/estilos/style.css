@@ -306,24 +306,21 @@ body {
 
 /* ── Recuerda callout ── */
 .caja-recordatorio {
-    /* Combinación de múltiples fondos: textura primero (arriba), degradado después (abajo) */
-    background:
-        url('../assets/imagenes/03.desafio/desafio-bg-snackbar.webp') center center repeat,
-        /* Ajusta la ruta a tu patrón */
-        linear-gradient(to right, #13311d 0%, #24472c 50%, #305839 100%);
-    /* Ajustado al tono oscuro de la captura */
-    /* Agregamos el modo de mezcla para que la textura se fusione perfectamente con el verde */
-    background-blend-mode: overlay;
+    background: linear-gradient(to right, #13311d 0%, #24472c 50%, #305839 100%);
     border-radius: 1.5rem;
-    /* Bordes redondeados idénticos al diseño */
-    max-width: 620px;
+    max-width: 615px;
+}
+
+/* El texto se fuerza por encima de la imagen */
+.contenido-recordatorio {
+    z-index: 2;
 }
 
 /* Estilos de la etiqueta de encabezado */
 .recordatorio-etiqueta {
     font-family: "JetBrains Mono", monospace;
     font-size: 0.75rem;
-    color: var(--color-text-light);
+    color: rgba(250, 247, 238, 0.75);
     letter-spacing: 0.18em;
 }
 
@@ -387,6 +384,35 @@ body {
         aspect-ratio: auto;
     }
 
+    /* --- sección desafío --- */
+    .grid-cell-1 {
+        border: 1px solid var(--color-stroke-light);
+        border-radius: 1.5rem 0 0 0;
+    }
+
+    .grid-cell-2 {
+        border-left: 0px;
+        border-top: 1px solid var(--color-stroke-light);
+        border-radius: 0 1.5rem 0 0;
+    }
+
+    .grid-cell-3 {
+        border-bottom: 0px;
+    }
+
+    .grid-cell-4 {
+        border-left: 0px;
+        border-bottom: 1px solid var(--color-stroke-light);
+    }
+
+    .grid-cell-5 {
+        border-radius: 0 0 1.5rem 0;
+    }
+
+    .grid-cell-6 img {
+        border-radius: 0 0 0 1.5rem;
+    }
+
     /* --- FAB --- */
     .whatsapp-fab {
         bottom: 24px;
@@ -430,6 +456,27 @@ body {
 
     .hero-section .hero-title {
         color: var(--color-text-light);
+    }
+
+    /* --- sección desafío --- */
+    .grid-cell-2 {
+        border-radius: 0px;
+        border-right: 0px;
+    }
+
+    .grid-cell-3 {
+        border-radius: 0 1.5rem 0 0;
+        border-top: 1px solid var(--color-stroke-light);
+        border-bottom: 1px solid var(--color-stroke-light);
+    }
+
+    .grid-cell-4 {
+        border-radius: 0 0 0 1.5rem;
+        border-left: 1px solid var(--color-stroke-light);
+    }
+
+    .grid-cell-6 img {
+        border-radius: 0px;
     }
 }
 
