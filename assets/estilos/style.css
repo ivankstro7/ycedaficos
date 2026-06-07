@@ -65,10 +65,10 @@
 
 /* B. boton Secundario */
 .btn-secondary {
-    background-color: var(--color-accent);
-    color: var(--color-text-light);
-    font-weight: 600;
-    border-color: var(--color-accent);
+    background-color: var(--background-neutro-050);
+    color: var(--color-text-primary);
+    font-weight: 500;
+    font-style: normal;
     border-radius: 100px;
     padding: 1rem 1.5rem;
     transition: all 0.3s ease;
@@ -76,9 +76,8 @@
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: var(--color-accent) !important;
-    border-color: var(--color-accent) !important;
-    color: var(--color-text-light) !important;
+    background-color: var(--color-brand-primary) !important;
+    color: var(--color-text-primary) !important;
     filter: brightness(0.95);
 }
 
@@ -86,15 +85,10 @@
     color: var(--color-text-light) !important;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 1rem 1.5rem;
-    border: 1px solid var(--color-stroke-light);
-    border-radius: 100px;
 }
 
 .btn-link:hover,
 .btn-link:focus {
-    background-color: var(--background-neutro-050) !important;
-    border-color: var(--color-stroke-light) !important;
     color: var(--color-text-light) !important;
     filter: brightness(0.95);
 }
@@ -342,6 +336,58 @@ body {
     /* Reemplaza aquí por tu variable fija si lo prefieres */
 }
 
+/* --- Sección Presentación --- */
+.seccion-presentacion {
+    /* Mismo degradado base que el snackbar corporativo */
+    background: linear-gradient(to right, #164527 0%, #0C321B 100%);
+    isolation: isolate;
+}
+
+/* Control estricto de la imagen del patrón */
+.presentacion-patron-fondo {
+    z-index: -1;
+}
+
+.posicion-contenido-presentacion {
+    z-index: 2;
+}
+
+.section-eyebrow-accent,
+.section-title-accent {
+    color: var(--color-text-light);
+}
+
+.section-title-accent span {
+    font-style: italic;
+}
+
+/* --- Tarjetas de Productos (Grid Inferior) --- */
+.tarjeta-producto {
+    height: 400px;
+    /* Altura fija óptima para mostrar el bulto y el cultivo */
+    border: 1px solid var(--color-stroke-light);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tarjeta-imagen-fondo {
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+/* Gradiente interno inferior en cada tarjeta para asegurar legibilidad del texto "Ver Detalle" */
+.tarjeta-producto::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -496,6 +542,11 @@ body {
     .hero-imagen-adaptativa {
         width: 99%;
     }
+
+    /* --- sección presentación  --- */
+    .tarjeta-producto {
+        height: 695px;
+    }
 }
 
 /* --- 1400px Larger Desktop --- */
@@ -507,7 +558,8 @@ body {
     }
 
     /* --- titulo de secciones --- */
-    .section-title {
+    .seccion-desafio .section-title,
+    .seccion-presentacion .section-title {
         font-size: 2.5rem;
     }
 
