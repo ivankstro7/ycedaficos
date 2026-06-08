@@ -177,7 +177,8 @@
         </div>
     </nav>
     <!-- Hero Section -->
-    <section class="container-fluid hero-section hero-degradado position-relative d-flex flex-column justify-content-center"
+    <section
+        class="container-fluid hero-section hero-degradado position-relative d-flex flex-column justify-content-center"
         data-aos="fade-in" data-aos-delay="300">
         <div class="col-lg-10 offset-lg-1">
             <img src="assets/imagenes/02.banner/hero-image.webp"
@@ -423,10 +424,9 @@
             <img src="assets/imagenes/04.presentacion/bg-seccion-presentacion.webp" alt="Patrón de fondo oscuro"
                 class="plan-patron position-absolute top-0 start-0 w-100 h-100 object-fit-cover d-none d-md-block">
             <div class="container posicion-contenido-presentacion position-relative z-2 py-4">
-                <div class="row mb-5 g-4">
+                <div class="row mb-5 g-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="col-6 mt-0">
-                        <p class="section-eyebrow-accent mb-0 color-text-light">─ Plan
-                            Nutricional</p>
+                        <p class="section-eyebrow-accent text-uppercase mb-0 color-text-light">─ Plan Nutricional</p>
                     </div>
                     <div class="col-6 text-end mt-0">
                         <p class="section-eyebrow-accent mb-0">3 ETAPAS · 1 COSECHA</p>
@@ -434,22 +434,21 @@
                 </div>
                 <!-- Grid cards -->
                 <div class="row g-4 align-items-stretch">
-                    <div class="col-12 col-lg-4">
-                        <div
-                            class="tarjeta-plan rounded-4 overflow-hidden bg-dark-smooth d-flex flex-column h-100 border border-secondary-subtle border-opacity-10">
-                            <div class="contenedor-imagen-plan position-relative flex-grow-1">
-                                <span class="badge-etapa position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill bg-white text-dark font-monospace fw-bold small z-2">01
-                                    0 A 30 DÍAS</span>
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="tarjeta-plan card tarjeta-plan-fija rounded-4 overflow-hidden bg-dark-smooth d-flex flex-column flex-md-row flex-lg-column border border-secondary-subtle border-opacity-10">
+                            <div class="contenedor-imagen-plan col-md-6 col-lg-auto">
+                                <div class="badge-etapa position-absolute top-0 start-0 m-3 p-1 d-flex gap-2 rounded-pill bg-neutro-050 z-2">
+                                    <span class="card-num badge rounded-pill bg-accent p-1">01</span>
+                                    <p class="card-num mb-0">0 A 30 DÍAS</p>
+                                </div>
                                 <img src="assets/imagenes/05.solucion/papero-11-16-20.webp" alt="Cultivo Retape Criolla"
-                                    class="imagen-tarjeta-plan w-100 h-100 object-fit-cover">
+                                    class="card-img-top imagen-tarjeta-plan imagen-criolla w-100 object-fit-cover">
                             </div>
-                            <div class="cuerpo-tarjeta-plan p-4 d-flex flex-column justify-content-between">
+                            <div class="card-body cuerpo-tarjeta-plan p-4 d-flex flex-column justify-content-between flex-grow-1 col-md-6 col-lg-auto">
                                 <div>
-                                    <h3 class="titulo-producto-plan card-title text-white mb-1">Retape Criolla</h3>
-                                    <p class="subtitulo-producto-plan text-brand mb-3">+ Elementos menores</p>
-                                    <span class="text-uppercase text-brand-dim small font-monospace d-block mb-3 fw-bold">Cultivos
-                                        de Criolla</span>
-                                    <p class="texto-descripcion-plan text-white-50 small m-0">Único fertilizante en
+                                    <h3 class="titulo-producto-plan card-title mb-3">Retape Criolla <br><span>+ Elementos menores</span></h3>
+                                    <p class="card-subtitle text-uppercase mb-3 text-brand-primary">Cultivos de criolla</p>
+                                    <p class="texto-descripcion-plan m-0">Único fertilizante en
                                         Colombia diseñado equilibradamente nutricional para cultivos de criolla que
                                         reduce el exceso de follaje en criolla para que cargue y engrose mas los
                                         tubérculos.</p>
@@ -457,42 +456,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="tarjeta-plan rounded-4 overflow-hidden bg-dark-smooth d-flex flex-column h-100 border border-secondary-subtle border-opacity-10">
-                            <div class="contenedor-imagen-plan position-relative flex-grow-1">
-                                <span class="badge-etapa position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill bg-white text-dark font-monospace fw-bold small z-2">02
-                                    0 A 30 DÍAS</span>
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="tarjeta-plan card tarjeta-plan-fija rounded-4 overflow-hidden bg-dark-smooth d-flex flex-column flex-md-row flex-lg-column border border-secondary-subtle border-opacity-10">
+                            <div class="contenedor-imagen-plan col-md-6 col-lg-auto">
+                                <div class="badge-etapa position-absolute top-0 start-0 m-3 p-1 d-flex gap-2 rounded-pill bg-neutro-050 z-2">
+                                    <span class="card-num badge rounded-pill bg-accent p-1">02</span>
+                                    <p class="card-num mb-0">0 A 30 DÍAS</p>
+                                </div>
                                 <img src="assets/imagenes/05.solucion/papero-11-25-20.webp" alt="Cultivo Retape Guatas"
-                                    class="imagen-tarjeta-plan w-100 h-100 object-fit-cover">
+                                    class="card-img-top imagen-tarjeta-plan imagen-guatas w-100 object-fit-cover">
                             </div>
-                            <div class="cuerpo-tarjeta-plan p-4 d-flex flex-column justify-content-between">
+                            <div class="card-body cuerpo-tarjeta-plan p-4 d-flex flex-column justify-content-between flex-grow-1 col-md-6 col-lg-auto">
                                 <div>
-                                    <h3 class="titulo-producto-plan card-title text-white mb-1">Retape Guatas</h3>
-                                    <p class="subtitulo-producto-plan text-brand mb-3">+ Elementos menores</p>
-                                    <span class="text-uppercase text-white-50 small font-monospace d-block mb-3">NPK ·
-                                        11-25-20</span>
-                                    <p class="texto-descripcion-plan text-white-50 small m-0">Alta carga de fósforo
+                                    <h3 class="titulo-producto-plan card-title mb-3">Retape Guatas<br><span>+ Elementos menores</span></h3>
+                                    <p class="card-subtitle text-uppercase mb-3 text-brand-primary">NPK · 11-25-20</p>
+                                    <p class="texto-descripcion-plan m-0">Alta carga de fósforo
                                         protegido para enraizamiento.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div
-                            class="tarjeta-plan rounded-4 overflow-hidden bg-dark-smooth d-flex flex-column h-100 border border-secondary-subtle border-opacity-10">
-                            <div class="contenedor-imagen-plan position-relative flex-grow-1">
-                                <span class="badge-etapa position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill bg-white text-dark font-monospace fw-bold small z-2">03
-                                    40 A 50 DÍAS</span>
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card tarjeta-plan tarjeta-plan-fija rounded-4 overflow-hidden bg-dark-smooth d-flex flex-column flex-md-row flex-lg-column border border-secondary-subtle border-opacity-10">
+                            <div class="contenedor-imagen-plan col-md-6 col-lg-auto">
+                                <div class="badge-etapa position-absolute top-0 start-0 m-3 p-1 d-flex gap-2 rounded-pill bg-neutro-050 z-2">
+                                    <span class="card-num badge rounded-pill bg-accent p-1">03</span>
+                                    <p class="card-num mb-0">0 A 40 DÍAS</p>
+                                </div>
                                 <img src="assets/imagenes/05.solucion/papero-11-14-24.webp" alt="Cultivo Reabone"
-                                    class="imagen-tarjeta-plan w-100 h-100 object-fit-cover">
+                                    class="card-img-top imagen-tarjeta-plan imagen-reabone w-100 object-fit-cover">
                             </div>
-                            <div class="cuerpo-tarjeta-plan p-4 d-flex flex-column justify-content-between">
+                            <div class="card-body cuerpo-tarjeta-plan p-4 d-flex flex-column justify-content-between flex-grow-1 col-md-6 col-lg-auto">
                                 <div>
-                                    <h3 class="titulo-producto-plan card-title text-white mb-1">Reabone</h3>
-                                    <p class="subtitulo-producto-plan text-brand mb-3">+ Elementos menores</p>
-                                    <span class="text-uppercase text-white-50 small font-monospace d-block mb-3">NPK ·
-                                        11-14-24</span>
-                                    <p class="texto-descripcion-plan text-white-50 small m-0">Máximo potasio para
+                                    <h3 class="titulo-producto-plan card-title mb-3">Reabone<br><span>+ Elementos menores</span></h3>
+                                    <p class="card-subtitle text-uppercase mb-3 text-brand-primary">NPK · 11-14-24</p>
+                                    <p class="texto-descripcion-plan m-0">Máximo potasio para
                                         engrose y firmeza final.</p>
                                 </div>
                             </div>

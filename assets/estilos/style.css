@@ -361,6 +361,11 @@ body {
     font-style: italic;
 }
 
+.section-eyebrow-accent {
+    font-size: 0.875rem;
+    color: rgba(250, 247, 238, 0.75);
+}
+
 /* --- Tarjetas de Productos (Grid Inferior) --- */
 .tarjeta-producto {
     height: 400px;
@@ -417,59 +422,51 @@ body {
 
 /* --- Bloque 2: Plan Nutricional --- */
 .bloque-plan {
-    background: linear-gradient(to right, #13311d 0%, #24472c 50%, #305839 100%);
+    background: linear-gradient(to left, #0C321B 0%, #164527 100%);
     isolation: isolate;
 }
 
 .plan-patron {
-    z-index: 1;
-    pointer-events: none;
-    mix-blend-mode: overlay;
     opacity: 0.7;
 }
 
 /* --- Tarjetas del Plan --- */
+.titulo-producto-plan {
+    font-style: italic;
+    color: var(--color-brand-primary);
+}
+
+.card-subtitle {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+}
+
+.texto-descripcion-plan {
+    color: rgba(250, 247, 238, 0.75);
+}
+
 .bg-dark-smooth {
-    background-color: #0b1e12;
+    background-color: #062714;
 }
 
 .tarjeta-plan {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Control estricto de las imágenes asimétricas */
-.contenedor-imagen-plan {
-    min-height: 240px;
-    height: 30vh;
-    max-height: 320px;
-}
-
 .imagen-tarjeta-plan {
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.badge-etapa {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
-}
-
-.titulo-producto-plan {
-    font-family: "Fraunces", serif;
-    font-size: 1.4rem;
+.badge-etapa span {
+    color: var(--color-text-light);
 }
 
 .subtitulo-producto-plan {
     font-size: 0.95rem;
     font-style: italic;
-}
-
-.text-brand {
-    color: #79b94b;
-}
-
-.text-brand-dim {
-    color: #79b94b;
-    opacity: 0.85;
 }
 
 .tarjeta-plan:hover .imagen-tarjeta-plan {
@@ -671,6 +668,23 @@ body {
     /* --- sección presentación  --- */
     .tarjeta-producto {
         height: 695px;
+    }
+
+    /* --- sección solución  --- */
+    .contenedor-grid .grid-cell-2 {
+        border-bottom: 0px;
+    }
+
+    .contenedor-grid .grid-cell-4 {
+        border-top: 1px solid var(--color-stroke-light);
+    }
+
+    .titulo-producto-plan {
+        font-size: 2rem;
+    }
+
+    .titulo-producto-plan span {
+        font-size: 1.5rem;
     }
 }
 
