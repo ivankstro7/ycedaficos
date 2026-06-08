@@ -388,6 +388,94 @@ body {
     z-index: 1;
 }
 
+/* --- sección solución --- */
+
+/* --- Bloque 1: La Solución --- */
+.posicion-contenido-solucion {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.contenedor-grid {
+    border-radius: 1.5rem;
+}
+
+.contenedor-grid .grid-cell-1 {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.contenedor-grid .grid-cell-2,
+.contenedor-grid .grid-cell-3,
+.contenedor-grid .grid-cell-4 {
+    border-left: 1px solid var(--color-stroke-light);
+    border-bottom: 1px solid var(--color-stroke-light);
+    border-right: 1px solid var(--color-stroke-light);
+}
+
+.contenedor-grid .grid-cell-4 {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+/* --- Bloque 2: Plan Nutricional --- */
+.bloque-plan {
+    background: linear-gradient(to right, #13311d 0%, #24472c 50%, #305839 100%);
+    isolation: isolate;
+}
+
+.plan-patron {
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    opacity: 0.7;
+}
+
+/* --- Tarjetas del Plan --- */
+.bg-dark-smooth {
+    background-color: #0b1e12;
+}
+
+.tarjeta-plan {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Control estricto de las imágenes asimétricas */
+.contenedor-imagen-plan {
+    min-height: 240px;
+    height: 30vh;
+    max-height: 320px;
+}
+
+.imagen-tarjeta-plan {
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.badge-etapa {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.titulo-producto-plan {
+    font-family: "Fraunces", serif;
+    font-size: 1.4rem;
+}
+
+.subtitulo-producto-plan {
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.text-brand {
+    color: #79b94b;
+}
+
+.text-brand-dim {
+    color: #79b94b;
+    opacity: 0.85;
+}
+
+.tarjeta-plan:hover .imagen-tarjeta-plan {
+    transform: scale(1.03);
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -432,7 +520,10 @@ body {
 
     /* --- sección desafío --- */
     .grid-cell-1 {
-        border: 1px solid var(--color-stroke-light);
+        border-top: 1px solid var(--color-stroke-light);
+        border-right: 1px solid var(--color-stroke-light);
+        border-bottom: 1px solid var(--color-stroke-light);
+        border-left: 1px solid var(--color-stroke-light);
         border-radius: 1.5rem 0 0 0;
     }
 
@@ -457,6 +548,30 @@ body {
 
     .grid-cell-6 img {
         border-radius: 0 0 0 1.5rem;
+    }
+
+    /* --- sección solución --- */
+    .posicion-contenido-solucion {
+        border-left: 1px solid var(--color-stroke-light);
+        border-top: 1px solid var(--color-stroke-light);
+        border-right: 1px solid var(--color-stroke-light);
+    }
+
+    .contenedor-grid .grid-cell-1 {
+        border-radius: 1.5rem 0 0 0;
+    }
+
+    .contenedor-grid .grid-cell-2,
+    .contenedor-grid .grid-cell-4 {
+        border-left: 0px;
+    }
+
+    .contenedor-grid .grid-cell-3 {
+        border-radius: 0 0 0 1.5rem;
+    }
+
+    .contenedor-grid .grid-cell-4 {
+        border-radius: 0 0 1.5rem 0;
     }
 
     /* --- FAB --- */
@@ -526,9 +641,13 @@ body {
     }
 
     /* --- sección presentación --- */
-    /* Animación de zoom suave en el producto al pasar el mouse */
     .tarjeta-producto:hover .tarjeta-imagen-fondo {
         transform: scale(1.04);
+    }
+
+    /* --- sección solución --- */
+    .grid-cell-1 {
+        border-bottom: 0px;
     }
 }
 
@@ -565,7 +684,8 @@ body {
 
     /* --- titulo de secciones --- */
     .seccion-desafio .section-title,
-    .seccion-presentacion .section-title {
+    .seccion-presentacion .section-title,
+    .bloque-solucion .section-title {
         font-size: 3rem;
     }
 
