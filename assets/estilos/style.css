@@ -524,6 +524,12 @@ body {
     .grid-cell-6 img {
         border-radius: 0px;
     }
+
+    /* --- sección presentación --- */
+    /* Animación de zoom suave en el producto al pasar el mouse */
+    .tarjeta-producto:hover .tarjeta-imagen-fondo {
+        transform: scale(1.04);
+    }
 }
 
 /* --- 1200px md Desktop --- */
@@ -560,7 +566,7 @@ body {
     /* --- titulo de secciones --- */
     .seccion-desafio .section-title,
     .seccion-presentacion .section-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     /* --- FAB --- */
