@@ -511,6 +511,15 @@ body {
     border-bottom: 1px solid var(--color-stroke-light);
 }
 
+.cta-semillas-yc {
+    background: linear-gradient(to right, #021E0C 0%, #000000 100%);
+    border-radius: 1.5rem;
+}
+
+.cta-semillas-yc .card-num {
+    color: var(--color-text-light);
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -796,7 +805,8 @@ body {
     .seccion-desafio .section-title,
     .seccion-presentacion .section-title,
     .bloque-solucion .section-title,
-    .seccion-semillas .section-title {
+    .seccion-semillas .section-title,
+    .cta-semillas-yc .section-title {
         font-size: 3rem;
     }
 
