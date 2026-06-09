@@ -521,10 +521,40 @@ body {
 }
 
 /* --- Sección Productos --- */
-.seccion-catalogo p {
+.container-productos .grid-cell-1 {
+    border-radius: 1.5rem 1.5rem 0 0;
+    border-left: 1px solid var(--color-stroke-light);
+    border-top: 1px solid var(--color-stroke-light);
+    border-right: 1px solid var(--color-stroke-light);
+    border-bottom: 1px solid var(--color-stroke-light);
+}
+
+.container-productos .grid-cell-2,
+.container-productos .grid-cell-3 {
+    border-left: 1px solid var(--color-stroke-light);
+    border-right: 1px solid var(--color-stroke-light);
+    border-bottom: 1px solid var(--color-stroke-light);
+}
+
+.container-productos .grid-cell-3 {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+
+.seccion-catalogo .tarjeta-catalogo .card-especificaciones {
     font-size: 0.75rem;
 }
 
+.contenedor-bulto-producto {
+    width: 100%;
+    max-height: 275px;
+}
+
+.contenedor-bulto-producto .imagen-bulto-catalogo {
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    width: 50%;
+    height: 100%;
+}
 
 .badge-tecnico-catalogo {
     font-family: "JetBrains Mono", monospace;
@@ -662,6 +692,22 @@ body {
 
     .contenedor-manejo-tecnico .grid-cell-4 {
         border-radius: 0 0 1.5rem 0;
+    }
+
+    /* --- Sección Productos --- */
+    .container-productos .grid-cell-1 {
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    .container-productos .grid-cell-2 {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .container-productos .grid-cell-3 {
+        border-radius: 0 1.5rem 1.5rem 0;
+        border-top: 1px solid var(--color-stroke-light);
     }
 
     /* --- FAB --- */
@@ -825,7 +871,8 @@ body {
     .seccion-presentacion .section-title,
     .bloque-solucion .section-title,
     .seccion-semillas .section-title,
-    .cta-semillas-yc .section-title {
+    .cta-semillas-yc .section-title,
+    .seccion-catalogo .section-title {
         font-size: 3rem;
     }
 
