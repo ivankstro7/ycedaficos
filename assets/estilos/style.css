@@ -521,6 +521,10 @@ body {
 }
 
 /* --- Sección Productos --- */
+.capa-hover-fondo {
+    display: none;
+}
+
 .container-productos .grid-cell-1 {
     border-radius: 1.5rem 1.5rem 0 0;
     border-left: 1px solid var(--color-stroke-light);
@@ -815,6 +819,69 @@ body {
     .contenedor-manejo-tecnico .grid-cell-4 {
         border-top: 1px solid var(--color-stroke-light);
         border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+    /* --- Sección Productos --- */
+    .tarjeta-catalogo:hover {
+        background-color: #062714;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+    .tarjeta-catalogo:hover .capa-hover-fondo {
+        display: block;
+        max-height: 466px;
+        height: 25vw;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-superior {
+        padding: 1rem;
+    }
+
+    .tarjeta-catalogo:hover .contenedor-bulto-producto {
+        display: none;
+    }
+
+    .tarjeta-catalogo:hover .contenedor-badges {
+        display: none !important;
+    }
+
+    .tarjeta-catalogo:hover .lista-beneficios-catalogo {
+        display: none !important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-superior .card-num,
+    .tarjeta-catalogo:hover .contenido-tarjeta-superior h3 {
+        color: var(--color-text-light)!important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-superior span {
+        color: var(--color-brand-primary)!important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-inferior {
+        margin-top: 0px !important;
+        padding: 1rem !important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-inferior .icono-descarga-blanco {
+        display: block !important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-inferior .icono-descarga {
+        display: none !important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-inferior .enlace-ficha {
+        color: var(--color-text-light);
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-inferior .icono-flecha-diagonal-verde {
+        display: block !important;
+    }
+
+    .tarjeta-catalogo:hover .contenido-tarjeta-inferior .icono-flecha-diagonal {
+        display: none !important;
     }
 }
 
