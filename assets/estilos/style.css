@@ -168,9 +168,20 @@
     border-color: var(--color-accent);
 }
 
-/* Evitar scroll horizontal */
+/* E. Evitar scroll horizontal */
+html,
+body {
+    overflow-x: clip;
+    width: 100%;
+}
+
 body {
     background-color: var(--background-neutro-100);
+}
+
+/* F. Divider */
+.divider {
+    border-top: 1px solid var(--color-stroke-light);
 }
 
 /* =========================================
@@ -588,6 +599,54 @@ body {
     font-size: 0.75rem;
 }
 
+/* --- Sección porque elegirnos --- */
+.img-card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    /* La altura se define por el contenido de la col derecha en desktop */
+    height: 100%;
+    min-height: 340px;
+}
+
+/* Caption sobre la imagen */
+.img-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img-caption p {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.img-caption em {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-brand-primary);
+}
+
+.ventaja-row h3 {
+    font-size: 1.125rem;
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -729,6 +788,15 @@ body {
         border-top: 1px solid var(--color-stroke-light);
     }
 
+    /* --- Sección porque elegirnos --- */
+    .img-col {
+        /* En desktop: sticky para que acompañe el scroll del listado */
+        position: sticky;
+        top: 1.5rem;
+        align-self: flex-start;
+        /* necesario para que sticky funcione en flex/grid */
+    }
+
     /* --- FAB --- */
     .whatsapp-fab {
         bottom: 24px;
@@ -867,11 +935,11 @@ body {
 
     .tarjeta-catalogo:hover .contenido-tarjeta-superior .card-num,
     .tarjeta-catalogo:hover .contenido-tarjeta-superior h3 {
-        color: var(--color-text-light)!important;
+        color: var(--color-text-light) !important;
     }
 
     .tarjeta-catalogo:hover .contenido-tarjeta-superior span {
-        color: var(--color-brand-primary)!important;
+        color: var(--color-brand-primary) !important;
     }
 
     .tarjeta-catalogo:hover .contenido-tarjeta-inferior {
@@ -954,7 +1022,8 @@ body {
     .bloque-solucion .section-title,
     .seccion-semillas .section-title,
     .cta-semillas-yc .section-title,
-    .seccion-catalogo .section-title {
+    .seccion-catalogo .section-title,
+    .seccion-elegirnos .section-title {
         font-size: 3rem;
     }
 
