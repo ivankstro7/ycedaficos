@@ -732,6 +732,17 @@ body {
     color: var(--color-text-light);
 }
 
+/* Footer */
+.tarjeta-distribuidor {
+    background-color: #F7F3E9;
+}
+
+.tarjeta-distribuidor .distribuidor-info {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-size: 1.125rem;
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
