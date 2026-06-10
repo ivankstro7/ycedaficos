@@ -544,6 +544,21 @@ body {
     border-radius: 0 0 1.5rem 1.5rem;
 }
 
+.seccion-catalogo .tarjeta-catalogo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.seccion-catalogo .tarjeta-catalogo .contenido-tarjeta-superior {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.seccion-catalogo .tarjeta-catalogo .contenido-tarjeta-inferior {
+    margin-top: auto;
+}
 
 .seccion-catalogo .tarjeta-catalogo .card-especificaciones {
     font-size: 0.75rem;
