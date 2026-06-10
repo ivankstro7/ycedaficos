@@ -714,7 +714,22 @@ body {
 }
 
 .seccion-faq .accordion-button:not(.collapsed) {
-    color: #062714 !important; /* Cambia al verde oscuro corporativo al abrirse */
+    color: #062714 !important;
+    /* Cambia al verde oscuro corporativo al abrirse */
+}
+
+/* sección cta */
+.seccion-cta {
+    background: linear-gradient(to right, #164527 0%, #0C321B 100%);
+    isolation: isolate;
+}
+
+.seccion-cta .cta-title {
+    font-size: 3rem;
+}
+
+.seccion-cta .cta-footer span {
+    color: var(--color-text-light);
 }
 
 /* Botón flotante personalizado */
@@ -1047,6 +1062,19 @@ body {
         border-left: 0px;
         border-top: 1px solid var(--color-stroke-light);
     }
+
+    .tarjeta-reel .cover-reel {
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .tarjeta-reel:hover .cover-reel {
+        transform: scale(1.05);
+    }
+
+    /* sección cta */
+    .seccion-cta .cta-title {
+        font-size: 4.5rem;
+    }
 }
 
 /* --- 1200px md Desktop --- */
@@ -1112,7 +1140,8 @@ body {
     .seccion-catalogo .section-title,
     .seccion-elegirnos .section-title,
     .seccion-testimonios .section-title,
-    .seccion-faq .section-title {
+    .seccion-faq .section-title,
+    .seccion-redes .section-title {
         font-size: 3rem;
     }
 
