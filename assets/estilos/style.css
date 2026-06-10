@@ -705,6 +705,18 @@ body {
     letter-spacing: .14em;
 }
 
+/* sección faq */
+.seccion-faq .accordion-button {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.seccion-faq .accordion-button:not(.collapsed) {
+    color: #062714 !important; /* Cambia al verde oscuro corporativo al abrirse */
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -1099,7 +1111,8 @@ body {
     .cta-semillas-yc .section-title,
     .seccion-catalogo .section-title,
     .seccion-elegirnos .section-title,
-    .seccion-testimonios .section-title {
+    .seccion-testimonios .section-title,
+    .seccion-faq .section-title {
         font-size: 3rem;
     }
 
