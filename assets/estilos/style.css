@@ -1098,7 +1098,8 @@ body {
     .seccion-semillas .section-title,
     .cta-semillas-yc .section-title,
     .seccion-catalogo .section-title,
-    .seccion-elegirnos .section-title {
+    .seccion-elegirnos .section-title,
+    .seccion-testimonios .section-title {
         font-size: 3rem;
     }
 
