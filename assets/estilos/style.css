@@ -647,6 +647,64 @@ body {
     font-size: 1.125rem;
 }
 
+/* sección testimonios */
+.seccion-testimonios .tarjeta-testimonio-principal {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.seccion-testimonios .tarjeta-testimonio-principal .card-num-accent {
+    color: var(--color-text-light);
+}
+
+.seccion-testimonios .tarjeta-testimonio-principal .badge,
+.tarjeta-testimonio-secundaria .badge {
+    font-size: 0.75rem;
+}
+
+.seccion-testimonios .tarjeta-testimonio-principal .card-title {
+    color: var(--color-text-light);
+}
+
+.seccion-testimonios .tarjeta-testimonio-principal .testimonio-desc {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-size: 1.125rem;
+}
+
+.contenedor-test-secundarios {
+    border-radius: 0 0 1.5rem 1.5rem;
+    border-left: 1px solid var(--color-stroke-light);
+    border-right: 1px solid var(--color-stroke-light);
+    border-bottom: 1px solid var(--color-stroke-light);
+}
+
+.tarjeta-testimonio-secundaria .badge {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    border: 1px solid var(--color-stroke-light);
+}
+
+.tarjeta-testimonio-secundaria .testimonio-body p {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-size: 1.125rem;
+}
+
+.tarjeta-testimonio-secundaria .testimonio-footer h4 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.125rem;
+}
+
+.tarjeta-testimonio-secundaria .testimonio-footer p {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 0.75rem;
+    letter-spacing: .14em;
+}
+
 /* Botón flotante personalizado */
 .whatsapp-fab {
     position: fixed;
@@ -966,6 +1024,17 @@ body {
     .tarjeta-catalogo:hover .contenido-tarjeta-inferior .icono-flecha-diagonal {
         display: none !important;
     }
+
+    /* sección testimonios */
+    .seccion-testimonios .tarjeta-testimonio-principal {
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    .contenedor-test-secundarios {
+        border-radius: 0 1.5rem 1.5rem 0;
+        border-left: 0px;
+        border-top: 1px solid var(--color-stroke-light);
+    }
 }
 
 /* --- 1200px md Desktop --- */
@@ -1004,6 +1073,12 @@ body {
     }
 
     .titulo-producto-plan span {
+        font-size: 1.5rem;
+    }
+
+    /* --- sección testimonios  --- */
+    .seccion-testimonios .tarjeta-testimonio-principal .testimonio-desc,
+    .tarjeta-testimonio-secundaria .testimonio-body p {
         font-size: 1.5rem;
     }
 }
