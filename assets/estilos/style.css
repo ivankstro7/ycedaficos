@@ -841,6 +841,11 @@ body {
         border-radius: 0 0 1.5rem 0;
     }
 
+    .imagen-criolla {
+        height: 100%;
+        object-position: right;
+    }
+
     /* --- sección semillas --- */
     .contenedor-info-minituberculos .grid-cell-1 {
         border-bottom: 0px;
