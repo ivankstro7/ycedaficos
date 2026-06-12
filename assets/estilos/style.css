@@ -495,6 +495,10 @@ body {
 }
 
 /* --- Sección Semillas --- */
+.seccion-semillas .semillas-logo {
+    width: 35%;
+}
+
 .tarjeta-variedades {
     border: 1px solid var(--color-stroke-light);
 }
@@ -857,6 +861,10 @@ body {
     }
 
     /* --- sección semillas --- */
+    .seccion-semillas .semillas-logo {
+        width: 25%;
+    }
+
     .contenedor-info-minituberculos .grid-cell-1 {
         border-bottom: 0px;
         border-radius: 1.5rem 1.5rem 0 0;
@@ -985,6 +993,10 @@ body {
     }
 
     /* --- sección semillas --- */
+    .seccion-semillas .semillas-logo {
+        width: 20%;
+    }
+
     .contenedor-info-minituberculos .grid-cell-1 {
         border-bottom: 1px solid var(--color-stroke-light);
         border-radius: 1.5rem 0 0 1.5rem;
